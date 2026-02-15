@@ -3,8 +3,8 @@
 # Site Settings
 title: PPEGC Platform
 description: PRISM Platform for Exceptional Genomic Cancer Cases - Advancing Precision Oncology
-url: "https://ppegc.github.io" # Change to your actual URL
-baseurl: "https://semdogan.github.io/ppegc-docs/" # Change to your repo name (or "" if using username.github.io)
+url: "https://semdogan.github.io" # Change to your actual URL
+baseurl: "/ppegc-docs/" # Change to your repo name (or "" if using username.github.io)
 
 # Theme
 theme: minima # Or choose: cayman, minimal, architect, slate
