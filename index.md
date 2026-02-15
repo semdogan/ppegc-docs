@@ -118,7 +118,7 @@ Gustave Roussy Institute
 
 ## Acknowledgments
 
-PPEGC is hosted at Gustave Roussy and supported by [funding sources]. We thank all contributing clinicians and researchers for their dedication to advancing precision oncology.
+PPEGC is hosted at Gustave Roussy. We thank all contributing clinicians and researchers for their dedication to advancing precision oncology.
 
 ---
 

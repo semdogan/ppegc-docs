@@ -87,8 +87,8 @@ lang: en
 logo: /assets/images/ppegc-logo.png # Upload your logo to this path
 
 # Site Footer
-footer_content: |
-  © 2026 PPEGC. Platform for Exceptional Genomic Cancer Cases. 
+footer_content:
+  © 2026 PPEGC. PRISM Platform for Exceptional Genomic Cancer Cases. 
   Hosted at Gustave Roussy Institute, France. 
   Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
 
