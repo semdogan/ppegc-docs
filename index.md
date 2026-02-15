@@ -1,4 +1,4 @@
-# Platform for Exceptional Genomic Cancer Cases
+# PRISM Platform for Exceptional Genomic Cancer Cases
 
 **PPEGC: Transforming rare clinical observations into scientific insights**
 
@@ -6,7 +6,7 @@
 
 ## Welcome
 
-The Platform for Exceptional Genomic Cancer Cases (PPEGC) is an international collaborative platform dedicated to sharing exceptional oncological cases associated with genomic alterations. We collect and curate rare cases showing unexpected therapeutic responses, unusual resistance patterns, or atypical toxicities.
+The PRISM Platform for Exceptional Genomic Cancer Cases (PPEGC) is an international collaborative platform dedicated to sharing exceptional oncological cases associated with genomic alterations. We collect and curate rare cases showing unexpected therapeutic responses, unusual resistance patterns, or atypical toxicities.
 
 Our mission is to identify weak signals in precision oncology, generate biological hypotheses, and facilitate international clinical networking.
 

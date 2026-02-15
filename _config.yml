@@ -2,7 +2,7 @@
 
 # Site Settings
 title: PPEGC Platform
-description: Platform for Exceptional Genomic Cancer Cases - Advancing Precision Oncology
+description: PRISM Platform for Exceptional Genomic Cancer Cases - Advancing Precision Oncology
 url: "https://semdogan.github.io"
 baseurl: "/ppegc-docs"
 
@@ -22,7 +22,7 @@ header_pages:
 
 # Author
 author: PPEGC Team
-email: contact@ppegc.org
+email: ppegc@gustaveroussy.fr
 
 # Social Links (comment out if not using)
 # twitter_username: ppegc_platform
