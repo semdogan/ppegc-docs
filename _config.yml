@@ -2,15 +2,14 @@
 
 # Site Settings
 title: PPEGC Platform
-description: PRISM Platform for Exceptional Genomic Cancer Cases - Advancing Precision Oncology
-url: "https://semdogan.github.io" # Change to your actual URL
-baseurl: "/ppegc-docs/" # Change to your repo name (or "" if using username.github.io)
+description: Platform for Exceptional Genomic Cancer Cases - Advancing Precision Oncology
+url: "https://semdogan.github.io"
+baseurl: "/ppegc-docs"
 
 # Theme
-theme: minima # Or choose: cayman, minimal, architect, slate
-# For custom themes: remote_theme: pages-themes/cayman@v0.2.0
+theme: minima
 
-# Navigation - Displayed in header menu
+# Navigation
 header_pages:
   - index.md
   - ABOUT.md
@@ -22,14 +21,12 @@ header_pages:
   - PATIENT-INFO-FR.md
 
 # Author
-author:
-  name: PPEGC Team
-  email: contact@ppegc.org
+author: PPEGC Team
+email: contact@ppegc.org
 
-# Social Links (optional - update with real accounts)
-twitter_username: ppegc_platform
-github_username: ppegc
-# linkedin_username: ppegc
+# Social Links (comment out if not using)
+# twitter_username: ppegc_platform
+# github_username: ppegc
 
 # Build Settings
 markdown: kramdown
@@ -41,18 +38,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# Kramdown Settings
+# Kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    css_class: 'highlight'
 
-# Sass/CSS
+# Sass
 sass:
   style: compressed
 
-# Exclude from processing
+# Exclude
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -60,14 +55,6 @@ exclude:
   - vendor
   - README.md
   - LICENSE.txt
-  - "*.sh"
-
-# Collections (for future case database)
-# Uncomment when you're ready to add cases
-# collections:
-#   cases:
-#     output: true
-#     permalink: /cases/:name/
 
 # Defaults
 defaults:
@@ -76,24 +63,17 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      
-# Google Analytics (optional - add your ID when ready)
-# google_analytics: UA-XXXXXXXX-X
-# Or for GA4:
-# google_analytics: G-XXXXXXXXXX
 
-# SEO Settings
+# SEO
 lang: en
-logo: /assets/images/ppegc-logo.png # Upload your logo to this path
-
-# Site Footer
-footer_content:
-  © 2026 PPEGC. PRISM Platform for Exceptional Genomic Cancer Cases. 
-  Hosted at Gustave Roussy Institute, France. 
-  Licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
-
-# Show excerpts on homepage
-show_excerpts: true
 
 # Timezone
 timezone: Europe/Paris
+
+# Minima theme settings
+minima:
+  skin: classic
+  
+# Custom footer (optional)
+# If you want a custom footer, uncomment and edit:
+# footer_content: "© 2026 PPEGC. Licensed under CC BY 4.0."
