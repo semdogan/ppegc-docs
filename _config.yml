@@ -1,0 +1,67 @@
+# PPEGC GitHub Pages Configuration
+
+# Site Settings
+title: PPEGC Platform
+description: Platform for Exceptional Genomic Cancer Cases - Advancing Precision Oncology
+url: "https://ppegc.github.io" # Change to your actual URL
+baseurl: "/ppegc-docs" # Change to your repo name
+
+# Theme
+theme: minima # Can also use: cayman, minimal, architect
+# For custom themes: remote_theme: pages-themes/cayman@v0.2.0
+
+# Navigation
+header_pages:
+  - index.md
+  - GOVERNANCE.md
+  - PRIVACY.md
+  - TERMS.md
+  - PATIENT-INFO.md
+
+# Author
+author:
+  name: PPEGC Team
+  email: contact@ppegc.org
+
+# Social (optional)
+twitter_username: ppegc_platform
+github_username: ppegc
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Custom CSS (create this file if you want custom styling)
+# sass:
+#   sass_dir: assets/css
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Collections (for future case database)
+# collections:
+#   cases:
+#     output: true
+#     permalink: /cases/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      
+# Analytics (optional - add Google Analytics ID)
+# google_analytics: UA-XXXXXXXX-X
+
+# SEO
+lang: en
+logo: /assets/images/ppegc-logo.png # Upload your logo to this path
