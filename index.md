@@ -21,7 +21,7 @@ Our mission is to identify weak signals in precision oncology, generate biologic
 - [Patient Information](PATIENT-INFO.md) — Information for patients about data sharing
 
 ### 🚀 Get Started
-- **Submit a Case:** [Access REDCap Form](https://redcap.link/ppegc-submit) *(replace with your actual link)*
+- **Submit a Case:** [Access REDCap Form](https://redcap.link/20lidode) *(replace with your actual link)*
 - **Browse Cases:** [Explore Published Cases](https://ppegc.org/cases) *(coming soon)*
 - **Contact Us:** support@ppegc.org
 
@@ -123,5 +123,5 @@ PPEGC is hosted at Gustave Roussy and supported by [funding sources]. We thank a
 ---
 
 *Last updated: February 15, 2026*  
-*Website: [ppegc.github.io/ppegc-docs](https://ppegc.github.io/ppegc-docs)*  
+*Website: [semdogan.github.io/ppegc-docs](https://semdogan.github.io/ppegc-docs)*  
 *© 2026 PPEGC. Content licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
