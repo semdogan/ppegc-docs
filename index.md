@@ -52,7 +52,7 @@ Our mission is to identify weak signals in precision oncology, generate biologic
 ## Key Features
 
 ✅ **Rapid Curation:** Cases reviewed within 7-15 business days  
-✅ **GDPR Compliant:** HDS-certified hosting at Gustave Roussy (France, EU)  
+✅ **GDPR Compliant:** Hosting at Gustave Roussy (France, EU)  
 ✅ **Open Science:** Published cases freely accessible under CC BY 4.0  
 ✅ **Quality Assured:** Manual curation by expert oncologists and bioinformaticians  
 ✅ **Citeable:** Each case receives a DOI for academic citation  
@@ -78,10 +78,10 @@ Progressive disease on vemurafenib despite confirmed V600E mutation. Molecular p
 
 ## Statistics *(Update regularly)*
 
-📊 **Cases Submitted:** 127  
-✅ **Cases Published:** 89  
-🌍 **Contributing Centers:** 23  
-🗺️ **Countries Represented:** 12  
+📊 **Cases Submitted:** xxx  
+✅ **Cases Published:** xx  
+🌍 **Contributing Centers:** xx 
+🗺️ **Countries Represented:** xx  
 📈 **Last Updated:** February 15, 2026  
 
 ---
@@ -95,18 +95,18 @@ Progressive disease on vemurafenib despite confirmed V600E mutation. Molecular p
 
 ## Stay Updated
 
-📧 **Newsletter:** Subscribe for monthly updates on new cases and research findings  
-🐦 **Twitter/X:** [@PPEGC_Platform](https://twitter.com/ppegc_platform) *(example)*  
+📧 **Newsletter:** Subscribe for monthly updates on new cases and research findings  *(example, not sure we'll do this)*
+🐦 **Twitter/X:** [@PPEGC_Platform](https://twitter.com/ppegc_platform) *(example, other social network)*  
 📰 **Blog:** Latest news and impact stories *(coming soon)*  
 
 ---
 
 ## Contact
 
-**General Inquiries:** contact@ppegc.org  
-**Technical Support:** support@ppegc.org  
+**General Inquiries:** contact@website-ppegc.org  
+**Technical Support:** support@website-ppegc.org  
 **Data Protection Officer:** dpo@gustaveroussy.fr  
-**Media & Press:** press@ppegc.org  
+**Media & Press:** press@website-ppegc.org  
 
 **Mailing Address:**  
 PPEGC Platform  
