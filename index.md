@@ -80,9 +80,9 @@ Progressive disease on vemurafenib despite confirmed V600E mutation. Molecular p
 
 📊 **Cases Submitted:** xxx  
 ✅ **Cases Published:** xx  
-🌍 **Contributing Centers:** xx 
+🌍 **Contributing Centers:** xx  
 🗺️ **Countries Represented:** xx  
-📈 **Last Updated:** February 15, 2026  
+📈 **Last Updated:** February 15, 2026   
 
 ---
 
@@ -95,7 +95,7 @@ Progressive disease on vemurafenib despite confirmed V600E mutation. Molecular p
 
 ## Stay Updated
 
-📧 **Newsletter:** Subscribe for monthly updates on new cases and research findings  *(example, not sure we'll do this)*
+📧 **Newsletter:** Subscribe for monthly updates on new cases and research findings  *(example, not sure we'll do this)*    
 🐦 **Twitter/X:** [@PPEGC_Platform](https://twitter.com/ppegc_platform) *(example, other social network)*  
 📰 **Blog:** Latest news and impact stories *(coming soon)*  
 
