@@ -223,7 +223,7 @@ title: PPEGC - Platform for Exceptional Genomic Cancer Cases
   <p class="hero-subtitle">Platform for Exceptional Genomic Cancer Cases</p>
   <p style="font-size: 1.1em; margin-bottom: 30px;">Transforming isolated clinical observations into actionable scientific knowledge</p>
   <a href="cases.html" class="hero-cta">Browse Cases</a>
-  <a href="#submit" class="hero-cta secondary">Submit a Case</a>
+  <a href="https://redcap.gustaveroussy.fr/redcap/surveys/?s=T3WP4X834N" class="hero-cta secondary">Submit a Case</a>
 </div>
 
 <!-- Stats Section -->
