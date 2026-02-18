@@ -369,7 +369,7 @@ PPEGC is an **international collaborative platform** dedicated to collecting, cu
 <div class="cta-box" id="submit">
   <h2>Have an Exceptional Case to Share?</h2>
   <p style="font-size: 1.1em; margin-bottom: 25px;">Join our international community of clinicians advancing precision oncology</p>
-  <a href="https://redcap.link/ppegc-submit" class="hero-cta" style="background: #2E75B6; color: white;">Submit Your Case</a>
+  <a href="https://redcap.gustaveroussy.fr/redcap/surveys/?s=T3WP4X834N" class="hero-cta" style="background: #2E75B6; color: white;">Submit Your Case</a>
   <p style="margin-top: 20px; font-size: 0.9em; color: #666;">Free to submit • Fast review (7-15 days) • Full attribution</p>
 </div>
 
