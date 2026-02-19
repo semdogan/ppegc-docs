@@ -227,7 +227,7 @@ title: PPEGC - Platform for Exceptional Genomic Cancer Cases
 </div>
 
 <!-- Stats Section -->
-<div class="stats">
+<!--div class="stats">
   <div class="stat-card">
     <div class="stat-number">3</div>
     <div class="stat-label">Published Cases</div>
@@ -244,7 +244,7 @@ title: PPEGC - Platform for Exceptional Genomic Cancer Cases
     <div class="stat-number">100%</div>
     <div class="stat-label">Open Access</div>
   </div>
-</div>
+</div> -->
 
 ## What is PPEGC?
 
