@@ -2,7 +2,7 @@
 
 This repository contains the documentation and governance materials for the **Platform for Exceptional Genomic Cancer Cases (PPEGC)**.
 
-🌐 **Live Site:** [https://ppegc.github.io/ppegc-docs](https://ppegc.github.io/ppegc-docs/
+🌐 **Live Site:** [https://ppegc.github.io/ppegc-docs/](https://ppegc.github.io/ppegc-docs/)
 
 ---
 
