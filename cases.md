@@ -416,7 +416,7 @@ title: Published Cases - PPEGC
 <div style="background: #f8f9fa; padding: 40px; border-radius: 8px; text-align: center; margin: 40px 0;">
   <h2 style="color: #2E75B6; margin-top: 0;">Have an Exceptional Case?</h2>
   <p style="font-size: 1.1em; margin-bottom: 25px;">Share your observation with the international oncology community</p>
-  <a href="[https://redcap.link/ppegc-submit](https://redcap.link/2flknzfs)" style="display: inline-block; background: #2E75B6; color: white; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold;">Submit Your Case</a>
+  <a href="https://redcap.link/2flknzfs" style="display: inline-block; background: #2E75B6; color: white; padding: 15px 40px; border-radius: 8px; text-decoration: none; font-weight: bold;">Submit Your Case</a>
   <p style="margin-top: 20px; color: #666; font-size: 0.9em;">Fast review (7-15 days) • Full attribution • Open access publication</p>
 </div>
 
