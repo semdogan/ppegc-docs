@@ -275,13 +275,13 @@
       <!-- Logo et Titre -->
       <a href="{{ "/" | relative_url }}" class="ppegc-brand">
         <!-- Logo - Décommentez cette ligne quand vous avez votre logo -->
-        <!-- <img src="{{ "/assets/images/ppegc-logo.png" | relative_url }}" alt="PPEGC Logo" class="ppegc-logo"> -->
+        <img src="{{ "/assets/images/ppegc-logo.png" | relative_url }}" alt="PPEGC Logo" class="ppegc-logo"> 
         
         <!-- Si pas de logo, icône temporaire -->
-        <svg class="ppegc-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!--<svg class="ppegc-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <rect width="100" height="100" rx="10" fill="white" opacity="0.9"/>
           <text x="50" y="65" font-size="50" font-weight="bold" fill="#2E75B6" text-anchor="middle">P</text>
-        </svg>
+        </svg>-->
         
         <div class="ppegc-title-block">
           <div class="ppegc-title">{{ site.title | default: "PPEGC" }}</div>
