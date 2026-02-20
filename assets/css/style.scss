@@ -328,18 +328,18 @@
    ========================================= */
 
 .stats-bar {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)) !important;
-  gap: 20px !important;
-  margin-bottom: 40px !important;
+ display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+  gap: 30px !important;
+  margin: 40px 0 !important;
+  text-align: center !important;
 }
 
 .stat-box {
-  background: white !important;
-  border: 2px solid #e9ecef !important;
+  background: #f8f9fa !important;
+  padding: 30px !important;
   border-radius: 8px !important;
-  padding: 20px !important;
-  text-align: center !important;
+  border: 4px solid #2E75B6 !important;
 }
 
 /* =========================================
