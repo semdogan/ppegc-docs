@@ -1,1 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  
+  {% seo %}
+  {% feed_meta %}
+
+  <style>
+    /* Reset et Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+
+    /* Header Personnalisé */
+    .ppegc-header {
+      background: linear-gradient(135deg, #2E75B6 0%, #1a4d7a 100%);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 15px 0;
+    }
+
+    .ppegc-header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Logo et Titre */
+    .ppegc-brand {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      text-decoration: none;
+    }
+
+    .ppegc-logo {
+      height: 50px;
+      width: auto;
+    }
+
+    .ppegc-title-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ppegc-title {
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .ppegc-subtitle {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 13px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .ppegc-brand:hover .ppegc-title {
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Navigation Desktop */
+    .ppegc-nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .ppegc-nav-link {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: all 0.3s;
+      position: relative;
+    }
+
+    .ppegc-nav-link:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .ppegc-nav-link.active {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Bouton Submit special */
+    .ppegc-submit-btn {
+      background: white;
+      color: #2E75B6;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .ppegc-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+
+    /* Menu Mobile Toggle */
+    .ppegc-mobile-toggle {
+      display: none;
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 24px;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .ppegc-mobile-toggle:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Navigation Mobile */
+    .ppegc-mobile-nav {
+      display: none;
+      background: rgba(26, 77, 122, 0.98);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .ppegc-mobile-nav.active {
+      display: block;
+    }
+
+    .ppegc-mobile-nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 12px 15px;
+      margin: 5px 0;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .ppegc-mobile-nav a:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Main Content */
+    .ppegc-main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Footer */
+    .ppegc-footer {
+      background: #f8f9fa;
+      border-top: 1px solid #e9ecef;
+      margin-top: 60px;
+      padding: 40px 20px;
+    }
+
+    .ppegc-footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .ppegc-footer p {
+      color: #666;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .ppegc-footer a {
+      color: #2E75B6;
+      text-decoration: none;
+    }
+
+    .ppegc-footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .ppegc-header-content {
+        flex-wrap: wrap;
+      }
+
+      .ppegc-brand {
+        gap: 10px;
+      }
+
+      .ppegc-logo {
+        height: 40px;
+      }
+
+      .ppegc-title {
+        font-size: 20px;
+      }
+
+      .ppegc-subtitle {
+        font-size: 11px;
+      }
+
+      .ppegc-nav {
+        display: none;
+      }
+
+      .ppegc-mobile-toggle {
+        display: block;
+      }
+
+      .ppegc-main {
+        padding: 0 15px;
+      }
+    }
+
+    /* Fix pour Hero section sur homepage */
+    .hero {
+      margin: 0 -20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero {
+        margin: 0 -15px;
+      }
+    }
+  </style>
+
+  <script>
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+      const mobileNav = document.querySelector('.ppegc-mobile-nav');
+      mobileNav.classList.toggle('active');
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Header Personnalisé -->
+  <header class="ppegc-header">
+    <div class="ppegc-header-content">
+      
+      <!-- Logo et Titre -->
+      <a href="{{ "/" | relative_url }}" class="ppegc-brand">
+        <!-- Logo - Décommentez cette ligne quand vous avez votre logo -->
+        <!-- <img src="{{ "/assets/images/ppegc-logo.png" | relative_url }}" alt="PPEGC Logo" class="ppegc-logo"> -->
+        
+        <!-- Si pas de logo, icône temporaire -->
+        <svg class="ppegc-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect width="100" height="100" rx="10" fill="white" opacity="0.9"/>
+          <text x="50" y="65" font-size="50" font-weight="bold" fill="#2E75B6" text-anchor="middle">P</text>
+        </svg>
+        
+        <div class="ppegc-title-block">
+          <div class="ppegc-title">{{ site.title | default: "PPEGC" }}</div>
+          <div class="ppegc-subtitle">{{ site.description | default: "Platform for Exceptional Genomic Cancer Cases" }}</div>
+        </div>
+      </a>
+
+      <!-- Navigation Desktop -->
+      <nav class="ppegc-nav">
+        <a href="{{ "/" | relative_url }}" class="ppegc-nav-link">Home</a>
+        <a href="{{ "/cases.html" | relative_url }}" class="ppegc-nav-link">Cases</a>
+        <a href="{{ "/ABOUT.html" | relative_url }}" class="ppegc-nav-link">About</a>
+        <a href="{{ "/GOVERNANCE.html" | relative_url }}" class="ppegc-nav-link">Governance</a>
+        <a href="{{ "/FAQ.html" | relative_url }}" class="ppegc-nav-link">FAQ</a>
+        <a href="https://redcap.link/ppegc-submit" class="ppegc-submit-btn" target="_blank">Submit Case</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="ppegc-mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+        ☰
+      </button>
+    </div>
+
+    <!-- Navigation Mobile (cachée par défaut) -->
+    <nav class="ppegc-mobile-nav">
+      <a href="{{ "/" | relative_url }}">Home</a>
+      <a href="{{ "/cases.html" | relative_url }}">Cases</a>
+      <a href="{{ "/ABOUT.html" | relative_url }}">About</a>
+      <a href="{{ "/GOVERNANCE.html" | relative_url }}">Governance</a>
+      <a href="{{ "/FAQ.html" | relative_url }}">FAQ</a>
+      <a href="https://redcap.link/ppegc-submit" target="_blank">Submit Case</a>
+    </nav>
+  </header>
+
+  <!-- Contenu Principal -->
+  <main class="ppegc-main">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="ppegc-footer">
+    <div class="ppegc-footer-content">
+      <p><strong>© 2026 PPEGC.</strong> Platform for Exceptional Genomic Cancer Cases.</p>
+      <p>
+        Hosted at Gustave Roussy Institute, Villejuif, France | 
+        <a href="{{ "/PRIVACY.html" | relative_url }}">Privacy Policy</a> | 
+        <a href="{{ "/TERMS.html" | relative_url }}">Terms</a> | 
+        Licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>
+      </p>
+      <p>
+        <a href="mailto:contact@ppegc.org">contact@ppegc.org</a> | 
+        <a href="mailto:support@ppegc.org">support@ppegc.org</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
 
